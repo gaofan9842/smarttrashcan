@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <com.suke.widget.SwitchButton
+        android:id="@+id/switch_button"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:visibility="invisible"
+        android:layout_above="@id/switch_button1"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="热区图"
+        android:layout_above="@id/switch_button1"
+        android:layout_toRightOf="@id/switch_button1"
+        android:textColor="#000000"
+        android:visibility="invisible"
+        android:textStyle="bold"/>
+
+
+    <!-- 真正显示的组件，其余组件只是为了给归位按钮定位-->
+    <com.suke.widget.SwitchButton
+        android:id="@+id/switch_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_above="@id/switch_button2"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="轨迹描绘"
+        android:layout_above="@id/switch_button2"
+        android:layout_toRightOf="@id/switch_button2"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+
+
+
+    <com.suke.widget.SwitchButton
+        android:id="@+id/switch_button2"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:visibility="invisible"
+        android:layout_alignBottom="@id/bmapView2"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="卫星图"
+        android:layout_alignBottom="@id/bmapView2"
+        android:layout_toRightOf="@id/switch_button2"
+        android:textColor="#000000"
+        android:visibility="invisible"
+        android:textStyle="bold"/>
+
+    <com.suke.widget.SwitchButton
+        android:id="@+id/switch_button3"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:visibility="invisible"
+        android:layout_above="@+id/switch_button"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="垃圾桶"
+        android:layout_above="@+id/switch_button"
+        android:layout_toRightOf="@id/switch_button2"
+        android:textColor="#000000"
+        android:visibility="invisible"
+        android:textStyle="bold"/>
+
+    <com.suke.widget.SwitchButton
+        android:id="@+id/switch_button4"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_above="@+id/switch_button3"
+        android:visibility="invisible"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="匿名定位"
+        android:layout_above="@+id/switch_button3"
+        android:layout_toRightOf="@id/switch_button"
+        android:textColor="#000000"
+        android:visibility="invisible"
+        android:textStyle="bold"/>
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/mylocation"
+        android:layout_width="38dp"
+        android:tint="#fff"
+        android:layout_height="38dp"
+        android:layout_above="@+id/switch_button4"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/mylocation"
+        />
+
+</RelativeLayout>

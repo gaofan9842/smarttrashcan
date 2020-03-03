@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <com.suke.widget.SwitchButton
+        android:id="@+id/switch_button"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_above="@id/switch_button1"
+      />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="热区图"
+        android:layout_above="@id/switch_button1"
+        android:layout_toRightOf="@id/switch_button1"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+
+    <com.suke.widget.SwitchButton
+        android:id="@+id/switch_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_above="@id/switch_button2"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="交通图"
+        android:layout_above="@id/switch_button2"
+        android:layout_toRightOf="@id/switch_button2"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+
+    <com.suke.widget.SwitchButton
+        android:id="@+id/switch_button2"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignBottom="@id/bmapView"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="卫星图"
+        android:layout_alignBottom="@id/bmapView"
+        android:layout_toRightOf="@id/switch_button2"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+
+    <com.suke.widget.SwitchButton
+        android:id="@+id/switch_button3"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_above="@+id/switch_button"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="垃圾桶"
+        android:layout_above="@+id/switch_button"
+        android:layout_toRightOf="@id/switch_button2"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+
+    <com.suke.widget.SwitchButton
+        android:id="@+id/switch_button4"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_above="@+id/switch_button3"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="匿名定位"
+        android:layout_above="@+id/switch_button3"
+        android:layout_toRightOf="@id/switch_button"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+
+
+
+    <android.support.constraint.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/rl_marker"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/shape_round_corner3"
+        android:visibility="gone"
+        android:clickable="true"><!-- 如果不添加这个属性，当点击布局时，会和地图点击事件干扰 -->
+
+        <ImageView
+            android:id="@+id/item_Image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/trashcan"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="93dp"
+            android:layout_marginTop="5dp"
+            android:text="这是设备编号"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/item_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp"
+            android:text="良好"
+            android:textSize="21dp"
+            android:textColor="#67d606"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/capacity"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <TextView
+            android:id="@+id/item_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="30dp"
+            android:text="50%"
+            android:textSize="16dp"
+            android:textColor="#8a8a8a"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/temp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <TextView
+            android:id="@+id/item_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="30dp"
+            android:text="25℃"
+            android:textSize="16dp"
+            android:textColor="#8a8a8a"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/humidity"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <TextView
+            android:id="@+id/item_humidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="30dp"
+            android:text="50%"
+            android:textSize="16dp"
+            android:textColor="#8a8a8a"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/state"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <TextView
+            android:id="@+id/item_alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="50dp"
+            android:text="容量已满，温度过高"
+            android:textSize="16dp"
+            android:textColor="#8a8a8a"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.v7.widget.AppCompatImageButton
+        android:id="@+id/mylocation"
+        android:layout_width="38dp"
+        android:tint="#fff"
+        android:layout_height="38dp"
+        android:layout_above="@+id/switch_button4"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/mylocation"
+        />
+</RelativeLayout>
+    <!--android:layout_alignRight="@+id/bmapView"-->

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#f2f0f0"
+tools:context=".trashcanDetailActivity">
+<ImageView
+    android:layout_width="325dp"
+    android:layout_height="210dp"
+    android:layout_marginLeft="17dp"
+    android:layout_marginTop="60dp"
+    android:src="@drawable/canpicture"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+<ImageView
+    android:id="@+id/background1"
+    android:layout_width="325dp"
+    android:layout_height="80dp"
+    android:layout_marginLeft="18dp"
+    android:layout_marginTop="290dp"
+    android:src="@drawable/shape_round_corner"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+<ImageView
+    android:id="@+id/background2"
+    android:layout_width="325dp"
+    android:layout_height="80dp"
+    android:layout_marginLeft="18dp"
+    android:layout_marginTop="380dp"
+    android:src="@drawable/shape_round_corner"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+<ImageView
+    android:id="@+id/background3"
+    android:layout_width="325dp"
+    android:layout_height="80dp"
+    android:layout_marginLeft="18dp"
+    android:layout_marginTop="470dp"
+    android:src="@drawable/shape_round_corner"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+<ImageView
+    android:id="@+id/line1"
+    android:layout_width="3dp"
+    android:layout_height="40dp"
+    android:layout_marginLeft="120dp"
+    android:layout_marginTop="400dp"
+    android:src="@drawable/shape_round_corner2"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+<ImageView
+    android:id="@+id/line2"
+    android:layout_width="3dp"
+    android:layout_height="40dp"
+    android:layout_marginLeft="235dp"
+    android:layout_marginTop="400dp"
+    android:src="@drawable/shape_round_corner2"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+<TextView
+    android:id="@+id/item_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="45dp"
+    android:layout_marginTop="315dp"
+    android:text="模块一"
+    android:textSize="20dp"
+    android:textColor="#000000"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+<TextView
+    android:id="@+id/item_condition"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="162dp"
+    android:layout_marginTop="310dp"
+    android:text="优"
+    android:textSize="25dp"
+    android:textColor="#2dbe05"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+<TextView
+    android:id="@+id/item_time"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="140dp"
+    android:layout_marginTop="345dp"
+    android:text="2019/10/1,12:30"
+    android:textSize="10dp"
+    android:textColor="#bab6b6"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="250dp"
+    android:layout_marginTop="315dp"
+    android:text="纬度"
+    android:textSize="10dp"
+    android:textColor="#bab6b6"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+    android:id="@+id/item_longitude"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="25dp"
+    android:layout_marginTop="310dp"
+    android:text="29.1111"
+    android:textColor="#000000"
+    android:textSize="14dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="250dp"
+    android:layout_marginTop="345dp"
+    android:text="经度"
+    android:textSize="10dp"
+    android:textColor="#bab6b6"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+    android:id="@+id/item_latitude"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="25dp"
+    android:layout_marginTop="341dp"
+    android:text="117.1111"
+    android:textColor="#000000"
+    android:textSize="14dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+<TextView
+    android:id="@+id/item_temp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="54dp"
+    android:layout_marginTop="400dp"
+    android:text="25"
+    android:textSize="25dp"
+    android:textColor="#000000"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="88dp"
+    android:layout_marginTop="414dp"
+    android:text="℃"
+    android:textColor="#bab6b6"
+    android:textSize="12dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="60dp"
+    android:layout_marginTop="430dp"
+    android:text="温度"
+    android:textSize="10dp"
+    android:textColor="#bab6b6"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+<TextView
+    android:id="@+id/item_load"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="162dp"
+    android:layout_marginTop="400dp"
+    android:text="50"
+    android:textSize="25dp"
+    android:textColor="#000000"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="195dp"
+    android:layout_marginTop="414dp"
+    android:text="%"
+    android:textColor="#bab6b6"
+    android:textSize="12dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="165dp"
+    android:layout_marginTop="430dp"
+    android:text="内容量"
+    android:textSize="10dp"
+    android:textColor="#bab6b6"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+<TextView
+    android:id="@+id/item_humidity"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="270dp"
+    android:layout_marginTop="400dp"
+    android:text="50"
+    android:textSize="25dp"
+    android:textColor="#000000"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="300dp"
+    android:layout_marginTop="414dp"
+    android:text="%"
+    android:textColor="#bab6b6"
+    android:textSize="12dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="275dp"
+    android:layout_marginTop="430dp"
+    android:text="湿度"
+    android:textSize="10dp"
+    android:textColor="#bab6b6"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+<TextView
+    android:id="@+id/item_alarm"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="45dp"
+    android:layout_marginTop="480dp"
+    android:text="状态良好"
+    android:textSize="15dp"
+    android:textColor="#bab6b6"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

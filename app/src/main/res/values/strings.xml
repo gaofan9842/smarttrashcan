@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SmartTrashcan</string>
+    <string name="title_activity_trashcan_detail">trashcanDetailActivity</string>
+</resources>
